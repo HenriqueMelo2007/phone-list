@@ -14,11 +14,11 @@ int main(void)
 
   printf("Name: ");
   fgets(name, sizeof(name), stdin);
-  name[strcspn(name, "\n")] = '\0';  // Remove newline character
+  name[strcspn(name, "\n")] = '\0';  
 
   printf("Number: ");
   fgets(number, sizeof(number), stdin);
-  number[strcspn(number, "\n")] = '\0';  // Remove newline character
+  number[strcspn(number, "\n")] = '\0'; 
 
   fprintf(list, "%s,%s\n", name, number);
 
